@@ -12,41 +12,7 @@
               crossorigin="anonymous"></script>
     <script>
         
-        $(document).ready(function(){
-            
-            $(".button1").hover(function(){$(this).css("background-color", "#C31826");},function(){ $(this).css("background-color", "white");})
-            $(".button2 p").hover(function(){$(this).css("color","#C31826");
-                                            $(this).css("background-color","white")},
-                                  function(){ $(this).css("color","white");
-                                            $(this).css("background-color","")})
-            $(".picture").hover(function(){$(this).stop().animate({margin:"10px",height:"219px"},300);
-                                           $(this).children("img").stop().animate({opacity:"0.5"},300);
-                                           $(this).children("p").stop().animate({opacity:"1",marginTop:"60px"},300);
-                                           $(this).next().children("h1").css("color","#C31826");
-                                           $(this).next().children("h1").css("font-size","32px");
-                                          },
-                                function(){$(this).stop().animate({margin:"15px",height:"209px"},300);
-                                           $(this).children("img").stop().animate({opacity:"1"},300);
-                                           $(this).children("p").stop().animate({opacity:"0",marginTop:"0px"},300);
-                                           $(this).next().children("h1").css("color","black");
-                                           $(this).next().children("h1").css("font-size","30px");
-                                          })
-             $(".list").hover(function(){$(this).prev().stop().animate({margin:"10px",height:"219px"},300);
-                                           $(this).prev().children("img").stop().animate({opacity:"0.5"},300);
-                                           $(this).prev().children("p").stop().animate({opacity:"1",marginTop:"60px"},300);
-                                           $(this).children().children("h1").css("color","#C31826");
-                                           $(this).children().children("h1").css("font-size","32px");
-                                          },
-                                function(){$(this).prev().stop().animate({margin:"15px",height:"209px"},300);
-                                           $(this).prev().children("img").stop().animate({opacity:"1"},300);
-                                           $(this).prev().children("p").stop().animate({opacity:"0",marginTop:"0px"},300);
-                                           $(this).children().children("h1").css("color","black");
-                                           $(this).children().children("h1").css("font-size","30px");
-                                          })
-            $(".list ul li").hover(function(){$(this).css("color","#C31826")},
-                                   function(){$(this).css("color","black")})
-            
-        })
+      
         
     </script>
         
@@ -218,7 +184,41 @@
        function() {   $(this).css("background-color","white");
             $(this).children("p").css("color","black");
         })
-        
+          $(document).ready(function(){
+            
+            $(".button1").hover(function(){$(this).css("background-color", "#C31826");},function(){ $(this).css("background-color", "white");})
+            $(".button2 p").hover(function(){$(this).css("color","#C31826");
+                                            $(this).css("background-color","white")},
+                                  function(){ $(this).css("color","white");
+                                            $(this).css("background-color","")})
+            $(".picture").hover(function(){$(this).stop().animate({margin:"10px",height:"219px"},300);
+                                           $(this).children("img").stop().animate({opacity:"0.5"},300);
+                                           $(this).children("p").stop().animate({opacity:"1",marginTop:"60px"},300);
+                                           $(this).next().children("h1").css("color","#C31826");
+                                           $(this).next().children("h1").css("font-size","32px");
+                                          },
+                                function(){$(this).stop().animate({margin:"15px",height:"209px"},300);
+                                           $(this).children("img").stop().animate({opacity:"1"},300);
+                                           $(this).children("p").stop().animate({opacity:"0",marginTop:"0px"},300);
+                                           $(this).next().children("h1").css("color","black");
+                                           $(this).next().children("h1").css("font-size","30px");
+                                          })
+             $(".list").hover(function(){$(this).prev().stop().animate({margin:"10px",height:"219px"},300);
+                                           $(this).prev().children("img").stop().animate({opacity:"0.5"},300);
+                                           $(this).prev().children("p").stop().animate({opacity:"1",marginTop:"60px"},300);
+                                           $(this).children().children("h1").css("color","#C31826");
+                                           $(this).children().children("h1").css("font-size","32px");
+                                          },
+                                function(){$(this).prev().stop().animate({margin:"15px",height:"209px"},300);
+                                           $(this).prev().children("img").stop().animate({opacity:"1"},300);
+                                           $(this).prev().children("p").stop().animate({opacity:"0",marginTop:"0px"},300);
+                                           $(this).children().children("h1").css("color","black");
+                                           $(this).children().children("h1").css("font-size","30px");
+                                          })
+            $(".list ul li").hover(function(){$(this).css("color","#C31826")},
+                                   function(){$(this).css("color","black")})
+            
+        })
         
     </script>
     
