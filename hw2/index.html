@@ -1,0 +1,230 @@
+<!DOCTYPE   html>
+<html>
+<style></style>
+<head>
+		<meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>永豐銀行Landing Page</title>
+        <link href="app.css" rel="stylesheet" type="text/css">
+        <script
+              src="http://code.jquery.com/jquery-3.3.1.js"
+              integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+              crossorigin="anonymous"></script>
+    <script>
+        
+        $(document).ready(function(){
+            
+            $(".button1").hover(function(){$(this).css("background-color", "#C31826");},function(){ $(this).css("background-color", "white");})
+            $(".button2 p").hover(function(){$(this).css("color","#C31826");
+                                            $(this).css("background-color","white")},
+                                  function(){ $(this).css("color","white");
+                                            $(this).css("background-color","")})
+            $(".picture").hover(function(){$(this).stop().animate({margin:"10px",height:"219px"},300);
+                                           $(this).children("img").stop().animate({opacity:"0.5"},300);
+                                           $(this).children("p").stop().animate({opacity:"1",marginTop:"60px"},300);
+                                           $(this).next().children("h1").css("color","#C31826");
+                                           $(this).next().children("h1").css("font-size","32px");
+                                          },
+                                function(){$(this).stop().animate({margin:"15px",height:"209px"},300);
+                                           $(this).children("img").stop().animate({opacity:"1"},300);
+                                           $(this).children("p").stop().animate({opacity:"0",marginTop:"0px"},300);
+                                           $(this).next().children("h1").css("color","black");
+                                           $(this).next().children("h1").css("font-size","30px");
+                                          })
+             $(".list").hover(function(){$(this).prev().stop().animate({margin:"10px",height:"219px"},300);
+                                           $(this).prev().children("img").stop().animate({opacity:"0.5"},300);
+                                           $(this).prev().children("p").stop().animate({opacity:"1",marginTop:"60px"},300);
+                                           $(this).children().children("h1").css("color","#C31826");
+                                           $(this).children().children("h1").css("font-size","32px");
+                                          },
+                                function(){$(this).prev().stop().animate({margin:"15px",height:"209px"},300);
+                                           $(this).prev().children("img").stop().animate({opacity:"1"},300);
+                                           $(this).prev().children("p").stop().animate({opacity:"0",marginTop:"0px"},300);
+                                           $(this).children().children("h1").css("color","black");
+                                           $(this).children().children("h1").css("font-size","30px");
+                                          })
+            $(".list ul li").hover(function(){$(this).css("color","#C31826")},
+                                   function(){$(this).css("color","black")})
+            
+        })
+        
+    </script>
+        
+</head>
+<body>
+    <header>
+        
+        <div style="top:0px;margin: auto;;height:40x;background-color: white;z-index: 100;" class="nav abs">
+            <ul style="min-width: 870px;width:80%;margin: auto">
+                <li class="button1"><a href="#"><p >關於永豐</p></a></li>
+                <li class="button1"><a href="#"><p >個人服務</p></a></li>
+                <li class="button1"><a href="#"><p >數位金融</p></a></li>
+                <li class="button1"><a href="#"><p >商業金融</p></a></li>
+                <li class="button1"><a href="#"><p >法人企業</p></a></li>
+            </ul>
+        </div>
+        
+        
+        <div style="height:70px;background:rgba(0,0,0,0.3);" class="nav abs" id="sec">
+            <div style="min-width: 870px; margin:0 auto;width:80%;height: inherit">
+                <div style="float:left ;padding:10px;">
+                    <a href="#"><img src="https://i.imgur.com/8voFLLK.png" height="50px" ></a>
+                </div>
+                 <ul>
+                    <li class="button2"style="border-right:1.5px white solid;background:rgba(240,0,0,0.3)" ><a href="#"><p class="op" >信用卡 </p></a></li>
+                    <li class="button2"><a href="#"><p >存款/外匯</p></a></li>
+                    <li class="button2"><a href="#"><p >貸款</p></a></li>
+                    <li class="button2"><a href="#"><p >財富管理</p></a></li>
+                    <li class="button2"><a href="#"><p >保險</p></a></li>
+                </ul>  
+            </div>
+        </div>
+    </header>
+    <div style="width:100%;">
+        <div style="width:100%;height:40px;background-color: #A21C2A">
+        </div>
+        <img src="https://i.imgur.com/jCUgBgd.jpg" width="100%">
+        
+    </div>
+    <div style="width:100%;">
+        <div style="margin-top: 60px;margin-left: 10%;margin-right: 10%;">
+            
+            <div  class="block">
+                <div class="picture" >
+                    <p >多樣化的優質卡片產品，<br>結合多家知名聯合企業；<br>不論是現金回饋或快速累<br>積紅利。讓你一卡在手,<br>盡享生活樂趣!</p>
+                    <img src="https://i.imgur.com/eOKh9rG.jpg" width="100%"  class="image">
+                </div>
+                <div class="list" style="width: 100%; ">
+                    <br>
+                    <a href="#"><h1>信用卡</h1></a>
+                    <br>
+                   <ul>
+                        <li><div class="icon2"></div><div class="option">卡片介紹</div></li><br>
+                        <li><div class="icon2"></div><div class="option">我要辦卡</div></li><br>
+                        <li><div class="icon2"></div><div class="option">刷卡優惠</div></li><br>
+                        <li><div class="icon2"></div><div class="option">紅利兌換</div></li><br>
+                    
+                    </ul>
+                    
+                </div>
+            
+            </div>
+            <div  class="block">
+                <div class="picture" >
+                    <p  >我要體驗簡單便利的金<br>融生活!無論是日常生活<br>各項財務往來支付處理<br>、個人儲蓄投資理財，<br>永豐讓你資金運用無往<br>不利，金融生活更便利</p>
+                    <img src="https://i.imgur.com/Y8rxOnd.jpg" width="100%" class="image">
+                </div>
+                <div class="list" style="width: 100%;">
+                    <br>
+                    <a href="#"><h1>存款/外匯</h1></a>
+                    
+                    <br>
+                  
+                    <ul >
+                        <li ><div class="icon2"></div><div class="option">利匯率</div></li><br>
+                        <li><div class="icon2"></div><div class="option">台幣存款</div></li><br>
+                        <li><div class="icon2"></div><div class="option">外幣存款</div></li><br>
+                        <li><div class="icon2"></div><div class="option">整合帳戶</div></li><br>
+                    
+                    </ul>
+                    
+                </div>
+            
+            </div>
+            <div  class="block">               
+                <div class="picture">
+                    <p  >我要體驗簡單便利的金<br>融生活!無論是日常生活<br>各項財務往來支付處理<br>、個人儲蓄投資理財，<br>永豐讓你資金運用無往<br>不利，金融生活更便利</p>
+                    <img src="https://i.imgur.com/uO8UGE2.jpg" width="100%" class="image">
+                </div>
+                <div class="list" style="">
+                    <br>
+                    <a href="#"><h1>貸款</h1></a>
+                    <br>
+                
+                   <ul>
+                        <li ><div class="icon2"></div><div class="option">豐雲房貸</div></li><br>
+                        <li><div class="icon2"></div><div class="option">個人信貸</div></li><br>
+                        <li><div class="icon2"></div><div class="option">房屋貸款</div></li><br>
+                        <li><div class="icon2"></div><div class="option">汽車貸款</div></li><br>
+                    
+                    </ul>
+                    
+                </div>
+            </div>
+            <div  class="block">
+                <div class="picture">
+                    <p  >我要體驗簡單便利的金<br>融生活!無論是日常生活<br>各項財務往來支付處理<br>、個人儲蓄投資理財，<br>永豐讓你資金運用無往<br>不利，金融生活更便利</p>
+                    <img src="https://i.imgur.com/psrTUl9.jpg"width="100%"class="image" >
+                </div>
+                <div class="list" style="width: 100%;">
+                    <br>
+                    <a href="#"><h1>財富管理</h1></a>
+                    <br>
+                   <ul>
+                        <li><div class="icon2"></div><div class="option">人身保險</div></li><br>
+                        <li><div class="icon2"></div><div class="option">個人信託</div></li><br>
+                        <li><div class="icon2"></div><div class="option">債卷</div></li><br>
+                        <li><div class="icon2"></div><div class="option">黃金存摺</div></li><br>
+                    
+                    </ul>
+                    
+                </div>
+            </div>
+            <div  class="block">
+                <div class="picture">
+                    <p  >我要體驗簡單便利的金<br>融生活!無論是日常生活<br>各項財務往來支付處理<br>、個人儲蓄投資理財，<br>永豐讓你資金運用無往<br>不利，金融生活更便利</p>
+                    <img src=https://i.imgur.com/KvKVHdU.jpg width="100%" class="image">
+                </div>
+                <div class="list" style="width: 100%;">
+                    <br>
+                    <a href="#"><h1>保險</h1></a>
+                    <br>
+                   <ul>
+                        <li><div class="icon2"></div><div class="option">人身保險</div></li><br>
+                        <li><div class="icon2"></div><div class="option">財產保險</div></li><br>
+                        <li><div class="icon2"></div><div class="option">旅平險</div></li><br>
+                        <li><div class="icon2"></div><div class="option">住宅火險</div></li><br>
+                    
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+    
+    </div>
+    <div style="" id="top"><p style="line-height: 50px"><b>TOP</b></p></div>
+    <div style="width:100%;background-color: #254A91">
+        <img src="https://i.imgur.com/aummBxI.jpg" width="100%">
+    
+    </div>
+    <script>
+        $(window).on("load",function(){
+            $(window).scroll(function(){
+            if($(document).scrollTop()>40){
+                $("#sec").addClass("fixed");
+                $(".nav").removeClass("abs");
+            }else{
+                $(".nav").removeClass("fixed");
+                $(".nav").addClass("abs");
+            }
+        })
+        })
+        $("#top").click(function(){
+                jQuery("html,body").animate({scrollTop:0},500);
+        })
+        $("#top").hover(function(){
+            $(this).css("background-color","#C31826");
+            $(this).children("p").css("color","white");} ,
+       function() {   $(this).css("background-color","white");
+            $(this).children("p").css("color","black");
+        })
+        
+        
+    </script>
+    
+</body>
+
+
+
+
+</html>
